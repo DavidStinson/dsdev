@@ -8,13 +8,19 @@ policies:
         invalidLastCharacters: .
       body:
         required: false
-      dco: true
       gpg: false
       spellcheck:
         locale: US
-      maximumOfOneCommit: true
       conventional:
         types:
+          - "build"
+          - "chore"
+          - "ci"
+          - "docs"
+          - "perf"
+          - "refactor"
+          - "style"
+          - "test"
           - "type"
         scopes:
           - "scope"

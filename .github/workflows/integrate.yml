@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Conform Action
-        uses: docker://autonomy/conform:v0.1.0-alpha.16
+        uses: docker://autonomy/conform:v0.1.0-alpha.19
 
 
 # on:
