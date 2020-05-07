@@ -22,6 +22,4 @@ policies:
           - "style"
           - "test"
           - "type"
-        scopes:
-          - "scope"
         descriptionLength: 72
