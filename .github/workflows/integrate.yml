@@ -1,0 +1,10 @@
+name: push-integrate
+on: [push]
+jobs:
+  conform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Conform Action
+        uses: docker://autonomy/conform:v0.1.0-alpha.19

@@ -1,0 +1,35 @@
+policies:
+  - type: commit
+    spec:
+      header:
+        length: 89
+        imperative: true
+        case: lower
+        invalidLastCharacters: .
+      body:
+        required: false
+      gpg: false
+      spellcheck:
+        locale: US
+      conventional:
+        types:
+          - "build"
+          - "chore"
+          - "ci"
+          - "docs"
+          - "perf"
+          - "refactor"
+          - "revert"
+          - "style"
+          - "test"
+          - "type"
+        scopes:
+          - "conform"
+          - "page"
+          - "component"
+          - "sanity"
+          - "cms"
+          - "build"
+          - "ci"
+          - "docs"
+        descriptionLength: 72
