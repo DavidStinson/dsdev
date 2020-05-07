@@ -29,4 +29,5 @@ policies:
           - "component"
           - "sanity"
           - "cms"
+          - "build"
         descriptionLength: 72
