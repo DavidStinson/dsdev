@@ -10,7 +10,8 @@ jobs:
         uses: docker://autonomy/conform:v0.1.0-alpha.19
 
 on:
-  pull_request: [master]
+  pull_request: 
+    branches: [master]
   jobs:
     build:
     runs-on: ubuntu-latest
