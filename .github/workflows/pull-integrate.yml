@@ -10,3 +10,7 @@ jobs:
         uses: jzweifel/gatsby-cli-github-action@master
         with:
           gatsby-arg: build
+        env:
+          SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
+          SANITY_TOKEN: ${{ secrets.SANITY_TOKEN }}
