@@ -30,4 +30,6 @@ policies:
           - "sanity"
           - "cms"
           - "build"
+          - "ci"
+          - "docs"
         descriptionLength: 72

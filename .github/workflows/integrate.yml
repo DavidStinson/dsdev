@@ -12,12 +12,12 @@ jobs:
 on:
   pull_request: 
     branches: [master]
-  jobs:
-    build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
-        with:
-          gatsby-arg: build
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - name: Build Gatsby Site
+      uses: jzweifel/gatsby-cli-github-action@master
+      with:
+        gatsby-arg: build
