@@ -1,9 +1,7 @@
-name: Gatsby CI
-
+name: Conform
 on: [push]
-
 jobs:
-  test_push:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
