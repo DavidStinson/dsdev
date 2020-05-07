@@ -1,4 +1,4 @@
-name: integrate
+name: push-integrate
 on: [push]
 jobs:
   conform:
@@ -8,16 +8,3 @@ jobs:
         uses: actions/checkout@v2
       - name: Conform Action
         uses: docker://autonomy/conform:v0.1.0-alpha.19
-
-on:
-  pull_request: 
-    branches: [master]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
-        with:
-          gatsby-arg: build
