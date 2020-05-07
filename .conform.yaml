@@ -19,7 +19,14 @@ policies:
           - "docs"
           - "perf"
           - "refactor"
+          - "revert"
           - "style"
           - "test"
           - "type"
+        scopes:
+          - "conform"
+          - "page"
+          - "component"
+          - "sanity"
+          - "cms"
         descriptionLength: 72
