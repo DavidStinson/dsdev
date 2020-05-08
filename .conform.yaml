@@ -30,6 +30,7 @@ policies:
           - "component"
           - "conform"
           - "docs"
+          - "format"
           - "page"
           - "sanity"
         descriptionLength: 72
