@@ -24,12 +24,12 @@ policies:
           - "test"
           - "type"
         scopes:
-          - "conform"
-          - "page"
-          - "component"
-          - "sanity"
-          - "cms"
           - "build"
           - "ci"
+          - "cms"
+          - "component"
+          - "conform"
           - "docs"
+          - "page"
+          - "sanity"
         descriptionLength: 72
