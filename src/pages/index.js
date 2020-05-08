@@ -1,3 +1,10 @@
 import React from "react";
+import Foundation from "../components/foundation";
 
-export default () => <h1>Hello world!</h1>;
+import "./global.css";
+
+export default () => (
+  <Foundation>
+    <h1>Hello world!</h1>
+  </Foundation>
+);
