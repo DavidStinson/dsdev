@@ -29,6 +29,7 @@ policies:
           - "cms"
           - "component"
           - "conform"
+          - "deps"
           - "docs"
           - "format"
           - "page"
