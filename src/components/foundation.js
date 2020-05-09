@@ -7,7 +7,7 @@ const Foundation = ({ children }) => (
   <React.Fragment>
     <header>
       <nav className="nav">
-        <Link exact to="/" className="">
+        <Link exact to="/" activeClassName="active">
           Portfolio
         </Link>
       </nav>

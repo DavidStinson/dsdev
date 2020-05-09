@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 .nav {
   text-align: center;
+  padding: calc(.24rem + .24vw) 0;
+  background-color: var(--bgAccent);
+  font-size: calc(1.25rem + .25vw);
+}
+
+.nav a {
+  color: var(--elementText);
+  text-decoration: none;
+  padding: calc(.24rem + .24vw) calc(.32rem + .32vw) calc(.14rem + .14vw);
+}
+
+.nav a.active {
+  border-bottom: calc(.1rem + .12vw) solid var(--elementText);
 }
