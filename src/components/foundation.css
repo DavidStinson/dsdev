@@ -45,7 +45,8 @@ body {
 .nav .link {
   color: var(--elementText);
   text-decoration: none;
-  padding: calc(.24rem + .24vw) calc(.32rem + .32vw) calc(.14rem + .14vw);
+  padding: calc(.24rem + .24vw) 0 calc(.14rem + .14vw);
+  margin: auto calc(.32rem + .32vw)
 }
 
 .nav .active {

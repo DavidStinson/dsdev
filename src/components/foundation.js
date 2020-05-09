@@ -14,6 +14,9 @@ const Foundation = ({ children }) => (
           <Link exact to="/" className="link" activeClassName="active">
             Portfolio & Contact
           </Link>
+          <Link exact to="/blog" className="link" activeClassName="active">
+            Blog
+          </Link>
         </div>
       </nav>
     </header>
