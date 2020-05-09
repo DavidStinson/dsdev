@@ -4,19 +4,50 @@ body {
   color: var(--text);
 }
 
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+
 .nav {
-  text-align: center;
-  padding: calc(.24rem + .24vw) 0;
+  grid-column: col-start 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+  padding: calc(.24rem + .24vw);
   background-color: var(--bgAccent);
   font-size: calc(1.25rem + .25vw);
 }
 
-.nav a {
+.nav .site-name-hero-container {
+  background-color: var(--textAccentBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: calc(3rem + 1.5vw);
+}
+
+.nav .site-name-hero {
+  position: fixed;
+  width: calc((100%/6) - 10px);
+  text-decoration: none;
+  color: var(--textAccent);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.nav .main-nav {
+  grid-column: col-start 3 / span 10;
+}
+
+.nav .link {
   color: var(--elementText);
   text-decoration: none;
   padding: calc(.24rem + .24vw) calc(.32rem + .32vw) calc(.14rem + .14vw);
 }
 
-.nav a.active {
+.nav .active {
   border-bottom: calc(.1rem + .12vw) solid var(--elementText);
 }

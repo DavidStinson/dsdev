@@ -1,15 +1,20 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "./foundation.css"
+import "./foundation.css";
 
 const Foundation = ({ children }) => (
   <React.Fragment>
-    <header>
+    <header className="header">
       <nav className="nav">
-        <Link exact to="/" activeClassName="active">
-          Portfolio
+        <Link className="site-name-hero">
+          <div className="site-name-hero-container">David Stinson</div>
         </Link>
+        <div className="main-nav">
+          <Link exact to="/" className="link" activeClassName="active">
+            Portfolio & Contact
+          </Link>
+        </div>
       </nav>
     </header>
     <main className="content">{children}</main>
