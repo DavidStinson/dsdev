@@ -2,6 +2,11 @@ html {
   font-size: 1em;
 }
 
+@font-face {
+  font-family: "VolkhovSub";
+  src: url("../../assets/fonts/subset-Volkhov-Italic.woff2");
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 

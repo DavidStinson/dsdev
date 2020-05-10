@@ -36,6 +36,7 @@ body {
   color: var(--textAccent);
   font-weight: 400;
   font-size: 1.8rem;
+  z-index: 2;
 }
 
 .nav .main-nav {
