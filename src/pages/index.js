@@ -6,11 +6,8 @@ import "./index.css";
 
 export default () => (
   <Foundation>
-    <section className="hero">
-      <div className="hero-left"></div>
-      <div className="hero-right"></div>
+    <main className="main-grid">
 
-    </section>
-    <p className="arrow bouncy">∨</p>
+    </main>
   </Foundation>
 );

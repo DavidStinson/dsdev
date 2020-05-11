@@ -4,24 +4,24 @@ import { Link } from "gatsby";
 import "./foundation.css";
 
 const Foundation = ({ children }) => (
-  <React.Fragment>
-    <header className="header">
-      <nav className="nav">
-        <Link className="site-name-hero">
+  <div className="foundation-grid">
+    <header className="header container">
+      <nav className="nav container">
+        <Link to="/"className="site-name-hero">
           <div className="site-name-hero-container">David Stinson</div>
         </Link>
         <div className="main-nav">
-          <Link exact to="/" className="link" activeClassName="active">
+          <Link to="/" className="link" activeClassName="active">
             Portfolio & Contact
           </Link>
-          <Link exact to="/blog" className="link" activeClassName="active">
+          <Link to="/blog/" className="link" activeClassName="active">
             Blog
           </Link>
         </div>
       </nav>
     </header>
-    <main className="content">{children}</main>
-  </React.Fragment>
+    <React.Fragment>{children}</React.Fragment>
+  </div>
 );
 
 export default Foundation;

@@ -14,12 +14,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/assets/`,
-      },
-    },
-    {
       resolve: "gatsby-source-sanity",
       options: {
         projectId: process.env.SANITY_PROJECT_ID,
