@@ -34,12 +34,14 @@ body.dark {
   --container-min-width: 14.75rem;
   display: grid;
   grid-template-columns:
-    [flush-left] minmax(0, 1fr) [container-left] repeat(
+    [flush-left] minmax(0, 1fr)
+    [container-left] repeat(
       12,
       [col-start] minmax(var(--container-min-width), var(--container-max-width))
         [col-end]
     )
-    [container-right] minmax(0, 1fr) [flush-right];
+    [container-right] minmax(0, 1fr)
+    [flush-right];
 }
 
 @media screen and (max-width: 1780px) {
