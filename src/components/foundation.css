@@ -37,13 +37,13 @@ nav.nav {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  height: calc(3rem + 1.5vw);
+  height: calc(4rem + .5vw);
 }
 
 .site-name-hero {
   position: fixed;
   top: calc(.5rem + .25vh);
-  left: calc((100% - (var(--container-max-width) * 10))/2);
+  left: calc((100% - (var(--container-max-width) * 12))/2);
   width: calc(2 * var(--container-max-width));
   text-decoration: none;
   color: var(--text-accent);
@@ -53,7 +53,7 @@ nav.nav {
 }
 
 .nav .main-nav {
-  grid-column: col-start 4 / span 8;
+  grid-column: col-start 3 / span 9;
   grid-row: header;
   box-sizing: border-box;
 }
@@ -75,6 +75,16 @@ nav.nav {
     display: none;
   }
   .nav .main-nav {
-    grid-column: col-start 2 / span 10;
+    grid-column: col-start 2 / span 9;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .site-name-hero {
+    display: none;
+  }
+  .nav .main-nav {
+    grid-column: col-start 1 / span 10;
   }
 }
