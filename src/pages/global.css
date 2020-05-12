@@ -1,0 +1,72 @@
+:root {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  --bg: #efefef;
+  --bg-accent: #303030;
+  --text: #151515;
+  --text-accent: #efefef;
+  --text-accent-bg: #595959;
+  --element: #325468;
+  --element-text: #efefef;
+}
+
+body.dark {
+  --bg: #34343a;
+  --bg-accent: #202020;
+  --text: #efefef;
+  --text-accent: #ff6700;
+  --text-accent-bg: #1a1a1a;
+  --element: #60a3e2;
+  --element-text: #202020;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  --container-max-width: 14.75rem;
+  --container-min-width: 14.75rem;
+  display: grid;
+  grid-template-columns:
+    [flush-left] minmax(0, 1fr)
+    [container-left] repeat(
+      12,
+      [col-start] minmax(var(--container-min-width), var(--container-max-width))
+        [col-end]
+    )
+    [container-right] minmax(0, 1fr)
+    [flush-right];
+}
+
+@media screen and (max-width: 1780px) {
+  .container,
+  .foundation-grid,
+  .main-grid {
+    --container-max-width: 10rem !important;
+    --container-min-width: 6.5rem !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container,
+  .foundation-grid,
+  .main-grid {
+    --container-max-width: 6.5rem !important;
+    --container-min-width: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container,
+  .foundation-grid,
+  .main-grid {
+    --container-max-width: 5rem !important;
+    --container-min-width: 2.5rem !important;
+  }
+}

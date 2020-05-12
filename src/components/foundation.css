@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.foundation-grid {
+  --container-max-width: 14.75rem;
+  --container-min-width: 14.75rem;
+  --hero-row-height: minmax(750px, 65vh);
+  --nav-font-size: calc(1.8rem + 0.25vw);
+  --nav-padding-size: calc(0.55rem + 0.24vw);
+  --nav-active-border: calc(0.3rem + 0.05vw);
+  --nav-height: calc(
+    var(--nav-font-size) + calc(2 * var(--nav-padding-size)) +
+      var(--nav-active-border)
+  );
+  --header-height: var(--nav-height);
+  display: grid;
+  grid-template-columns:
+    [flush-left] minmax(0, 1fr)
+    [container-left] repeat(
+      12,
+      [col-start] minmax(var(--container-min-width), var(--container-max-width))
+        [col-end]
+    )
+    [container-right] minmax(0, 1fr)
+    [flush-right];
+  grid-template-rows: [header] var(--header-height) [main];
+}
+
+.header {
+  grid-column: flush-left / flush-right;
+  grid-row: header;
+  height: var(--nav-height);
+}
+
+nav.nav {
+  grid-column: flush-left / flush-right;
+  background-color: var(--bg-accent);
+  font-size: var(--nav-font-size);
+  height: var(--nav-height);
+}
+
+.nav .site-name-hero-container {
+  background-color: var(--text-accent-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: calc(4rem + 0.5vw);
+}
+
+.site-name-hero {
+  position: fixed;
+  top: calc(0.5rem + 0.25vh);
+  left: calc((100% - (var(--container-max-width) * 12)) / 2);
+  width: calc(2 * var(--container-max-width));
+  text-decoration: none;
+  color: var(--text-accent);
+  font-weight: 400;
+  font-size: 3rem;
+  z-index: 2;
+}
+
+.nav .main-nav {
+  grid-column: col-start 3 / span 9;
+  grid-row: header;
+  box-sizing: border-box;
+}
+
+.nav .link {
+  color: var(--element-text);
+  text-decoration: none;
+  padding: var(--nav-padding-size) 0;
+  margin: 0 calc(0.32rem + 0.42vw);
+}
+
+.nav .active {
+  padding: var(--nav-padding-size) 0
+    calc(var(--nav-padding-size) - var(--nav-active-border));
+  border-bottom: var(--nav-active-border) solid var(--element-text);
+}
+
+@media screen and (max-width: 1780px) {
+  .site-name-hero {
+    display: none;
+  }
+  .nav .main-nav {
+    grid-column: col-start 2 / span 9;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .site-name-hero {
+    display: none;
+  }
+  .nav .main-nav {
+    grid-column: col-start 1 / span 10;
+  }
+}
