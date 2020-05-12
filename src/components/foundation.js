@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import Social from "../components/social"
+
 import "./foundation.css";
 
 const Foundation = ({ children }) => (
   <div className="foundation-grid">
     <header className="header container">
       <nav className="nav container">
-        <Link to="/" className="site-name-hero">
-          <div className="site-name-hero-container">David Stinson</div>
-        </Link>
+        <Social />
         <div className="main-nav">
           <Link to="/" className="link" activeClassName="active">
             Portfolio & Contact

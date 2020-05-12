@@ -1,0 +1,23 @@
+.social-name-container {
+  position: fixed;
+  top: calc(0.5rem + 0.25vh);
+  left: calc((100% - (var(--container-max-width) * 12)) / 2);
+  width: calc(2 * var(--container-max-width));
+  text-decoration: none;
+  color: var(--text-accent);
+  font-weight: 400;
+  font-size: 3rem;
+  z-index: -1;
+  background-color: var(--text-accent-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: calc(4rem + 0.5vw);
+}
+
+@media screen and (max-width: 1780px) {
+  .social-icon {
+    display: none;
+  }
+}
