@@ -53,7 +53,7 @@ nav.nav {
 }
 
 .nav .main-nav {
-  grid-column: col-start 4 / span 7;
+  grid-column: col-start 4 / span 8;
   grid-row: header;
   box-sizing: border-box;
 }
@@ -68,4 +68,13 @@ nav.nav {
 .nav .active {
   padding: var(--nav-padding-size) 0 calc(var(--nav-padding-size) - var(--nav-active-border));
   border-bottom: var(--nav-active-border) solid var(--element-text);
+}
+
+@media screen and (max-width: 1780px) {
+  .site-name-hero {
+    display: none;
+  }
+  .nav .main-nav {
+    grid-column: col-start 2 / span 10;
+  }
 }
