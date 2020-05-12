@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Merriweather";
   src: url("../assets/fonts/Merriweather-Regular.woff2") format("woff2");
-} 
+}
 
 .main-grid {
   grid-column: flush-left / flush-right;
@@ -10,13 +10,17 @@
   --container-min-width: 14.75rem;
   --hero-row-height: minmax(750px, 65vh);
   display: grid;
-  grid-template-columns: [flush-left] minmax(0, 1fr) [container-left] repeat(12, [col-start] minmax(var(--container-min-width), var(--container-max-width)) [col-end]) [container-right] minmax(0, 1fr) [flush-right] ;
+  grid-template-columns: [flush-left] minmax(0, 1fr) [container-left] repeat(
+      12,
+      [col-start] minmax(var(--container-min-width), var(--container-max-width))
+        [col-end]
+    ) [container-right] minmax(0, 1fr) [flush-right];
   grid-template-rows: [hero] var(--hero-row-height);
 }
 
 @media screen and (max-height: 750px) {
   .main-grid {
-    --hero-row-height: calc(100vh - var(--nav-height))
+    --hero-row-height: calc(100vh - var(--nav-height));
   }
 }
 
@@ -40,7 +44,9 @@
 }
 
 .overwhelmingly-large {
-  font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   margin: 0;
   color: var(--text-accent);
   font-size: clamp(32px, calc(1rem + 4vw), 96px);
@@ -48,6 +54,6 @@
 
 .oversized {
   margin: 0;
-  font-size: clamp(15px, calc(.6rem + 1.6vw), 42px);
+  font-size: clamp(15px, calc(0.6rem + 1.6vw), 42px);
   color: var(--text-accent);
 }

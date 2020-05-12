@@ -7,7 +7,7 @@ const Foundation = ({ children }) => (
   <div className="foundation-grid">
     <header className="header container">
       <nav className="nav container">
-        <Link to="/"className="site-name-hero">
+        <Link to="/" className="site-name-hero">
           <div className="site-name-hero-container">David Stinson</div>
         </Link>
         <div className="main-nav">
