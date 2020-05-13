@@ -15,6 +15,7 @@ body {
   --text-accent-bg: #595959;
   --element: #325468;
   --element-text: #efefef;
+  --github-logo: url(../assets/images/github-light.png);
 }
 
 body.dark {
@@ -25,6 +26,7 @@ body.dark {
   --text-accent-bg: #1a1a1a;
   --element: #60a3e2;
   --element-text: #202020;
+  --github-logo: url(../assets/images/github-dark.png);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
