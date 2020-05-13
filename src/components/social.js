@@ -20,14 +20,17 @@ class Social extends Component {
 
   render() {
     return (
-      <aside className="social-container">
+      <aside
+        className="social-container"
+        data-aos="fade-down"
+        data-aos-anchor="#portfolio"
+        data-aos-anchor-placement="center-top"
+      >
         <div
           className="social-name-container item item--primary"
-          data-aos="fade-down"
-          data-aos-anchor="#portfolio"
-          data-aos-anchor-placement="top-top"
+          id="social-name"
         >
-          <span id="social-name">David Stinson</span>
+          <span>David Stinson</span>
         </div>
         <div className="social-site-container">
           <a

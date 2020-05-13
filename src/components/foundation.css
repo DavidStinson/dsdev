@@ -33,6 +33,7 @@ body {
   grid-column: flush-left / flush-right;
   grid-row: header;
   height: var(--nav-height);
+  z-index: 3;
 }
 
 .nav {
@@ -40,6 +41,7 @@ body {
   background-color: var(--bg-accent);
   font-size: var(--nav-font-size);
   height: var(--nav-height);
+  z-index: 3;
 }
 
 .nav .main-nav {

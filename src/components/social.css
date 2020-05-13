@@ -2,7 +2,7 @@
   position: fixed;
   top: calc(0.5rem + 0.25vh);
   left: calc((100% - (var(--container-max-width) * 12)) / 2);
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
 }
@@ -21,19 +21,19 @@
   height: calc(4rem + 0.5vw);
 }
 
-
 .social-site-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: calc(2 * var(--container-max-width));
+  z-index: 1;
 }
 
 .social-link {
-  margin: 1.2rem .8rem 0px;
+  margin: 1.2rem 0.8rem 0px;
   height: 2.4rem;
-  width: 2.4rem
+  width: 2.4rem;
 }
 
 .social-logo {
@@ -45,11 +45,11 @@
   margin: 0;
   padding: 0;
   line-height: 3rem;
-  display: none
+  display: none;
 }
 
 /* this is unbelievably hacky, but implements the use of different images in light and dark mode while retaining a11y and without using js. */
-#github-logo-small{
+#github-logo-small {
   background-image: var(--github-logo);
   height: 0rem;
   width: 0rem;
