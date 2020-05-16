@@ -17,6 +17,7 @@ policies:
           - "chore"
           - "ci"
           - "docs"
+          - "fix"
           - "perf"
           - "refactor"
           - "revert"
