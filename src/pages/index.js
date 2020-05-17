@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Foundation from "../components/Foundation";
+import Foundation from "../components/foundation";
 import Cards from "../components/Cards";
 
 import "./global.css";
