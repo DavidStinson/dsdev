@@ -25,6 +25,7 @@ policies:
           - "test"
           - "type"
         scopes:
+          - "api"
           - "build"
           - "ci"
           - "cms"

@@ -7,13 +7,13 @@ import "./global.css";
 import "./index.css";
 
 export default function Index({ data }) {
-  let portfolioEntries = data.allSanityPost.nodes.map(entry => ({
-      ...entry,
-      slug: entry.slug.current,
-      tags: entry.tags.map(tag => tag.title),
-      excerpt: entry._rawBodyExcerpt[0].children[0].text
-  }))
-  console.log(portfolioEntries)
+  let portfolioEntries = data.allSanityPost.nodes.map((entry) => ({
+    ...entry,
+    slug: entry.slug.current,
+    tags: entry.tags.map((tag) => tag.title),
+    excerpt: entry._rawBodyExcerpt[0].children[0].text,
+  }));
+  console.log(portfolioEntries);
   return (
     <Foundation>
       <main className="main-grid">
@@ -40,11 +40,9 @@ export default function Index({ data }) {
 
 export const query = graphql`
   {
-    allSanityPost(
-      filter: { topics: { elemMatch: { title: { eq: "Portfolio" } } } }
-    ) {
+    allSanityPost(filter: { topic: { title: { eq: "Portfolio" } } }) {
       nodes {
-        id
+        _id
         author {
           name
         }
