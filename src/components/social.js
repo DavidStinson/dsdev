@@ -23,7 +23,7 @@ class Social extends Component {
       <aside
         className="social-container"
         data-aos="fade-down"
-        data-aos-anchor="#portfolio"
+        data-aos-anchor="#portfolio-head"
         data-aos-anchor-placement="center-top"
       >
         <div

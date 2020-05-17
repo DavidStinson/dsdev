@@ -67,12 +67,13 @@
   grid-row: portfoio;
   display: flex;
   flex-direction: column;
-  margin-left: 1.2rem;
+  margin-left: 2rem;
 }
 
 @media screen and (max-width: 1780px) {
   .portfolio {
     grid-column: col-start 1 / span 12;
+    margin-left: 1rem;
   }
 }
 
@@ -81,7 +82,7 @@
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   margin: 0 calc(0.32rem + 0.42vw);
-  padding: calc(2rem + 0.5vw) 0;
+  padding: calc(1.2rem + 0.5vw) 0;
   color: var(--text);
   font-size: clamp(24px, calc(1rem + 3vw), 60px);
 }
