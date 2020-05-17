@@ -17,6 +17,8 @@ policies:
           - "chore"
           - "ci"
           - "docs"
+          - "fix"
+          - "implement"
           - "perf"
           - "refactor"
           - "revert"
@@ -24,6 +26,7 @@ policies:
           - "test"
           - "type"
         scopes:
+          - "api"
           - "build"
           - "ci"
           - "cms"
