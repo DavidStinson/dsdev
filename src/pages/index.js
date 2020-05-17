@@ -13,7 +13,6 @@ export default function Index({ data }) {
     tags: entry.tags.map((tag) => tag.title),
     excerpt: entry._rawBodyExcerpt[0].children[0].text,
   }));
-  console.log(portfolioEntries);
   return (
     <Foundation>
       <main className="main-grid">
