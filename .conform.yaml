@@ -36,6 +36,7 @@ policies:
           - "docs"
           - "format"
           - "page"
+          - "plugin"
           - "sanity"
           - "style"
         descriptionLength: 72

@@ -45,27 +45,33 @@ export const query = graphql`
     allSanityPost(filter: { topic: { title: { eq: "Portfolio" } } }) {
       nodes {
         _id
-        authors {
-          name
-          _id
-        }
         _rawBodyExcerpt
+        authors {
+          _id
+          name
+        }
+        deploymentLink
         githubLink
         heroImage {
           alt
           attr
         }
-        publishedDate
-        updatedDate
+        publishedDate(formatString: "dddd, MMM Do YYYY")
         slug {
           current
         }
         tags {
-          title
           _id
+          title
         }
         title
-        deploymentLink
+        topic {
+          slug {
+            current
+          }
+          title
+        }
+        updatedDate(formatString: "dddd, MMM Do YYYY")
       }
     }
   }
