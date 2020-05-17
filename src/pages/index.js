@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Foundation from "../components/Foundation";
-import Cards from "../components/Cards"
+import Cards from "../components/Cards";
 
 import "./global.css";
 import "./index.css";
@@ -32,7 +32,7 @@ export default function Index({ data }) {
             My Work
           </h2>
           <div>
-            <Cards cardStyle="portfolio-cards" cards={portfolioEntries}/>
+            <Cards cardStyle="portfolio-cards" cards={portfolioEntries} />
           </div>
         </section>
       </main>
