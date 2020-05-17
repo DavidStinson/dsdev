@@ -5,7 +5,6 @@ import Card from "../components/Card";
 import "./cards.css";
 
 export default function Cards({ cards, cardStyle }) {
-  console.log(cardStyle);
   return (
     <>
       {cards && (
