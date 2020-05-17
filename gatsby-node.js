@@ -16,6 +16,9 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           topic {
             title
+            slug {
+              current
+            }
           }
         }
       }
@@ -31,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
   blogs.forEach((blog) => {
     actions.createPage({
       // Path for this page — required
-      path: `/blog/${blog.topic.title}/${blog.slug.current}`,
+      path: `/blog/${blog.topic.slug.current}/${blog.slug.current}`,
       component: blogPostTemplate,
       context: {
         // Add optional context data to be inserted
