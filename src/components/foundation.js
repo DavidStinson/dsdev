@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Social from "../components/social";
+import Social from "./Social";
 
 import "./foundation.css";
 

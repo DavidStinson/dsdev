@@ -1,5 +1,5 @@
 import React from "react";
-import Foundation from "../components/foundation";
+import Foundation from "../components/Foundation";
 
 import "./global.css";
 import "./index.css";

@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Foundation from "../components/foundation";
+import Foundation from "../components/Foundation";
+import Cards from "../components/Cards"
 
 import "./global.css";
 import "./index.css";
@@ -10,7 +11,7 @@ export default function Index({ data }) {
   let portfolioEntries = data.allSanityPost.nodes.map((entry) => ({
     ...entry,
     slug: entry.slug.current,
-    tags: entry.tags.map((tag) => tag.title),
+    id: entry._id,
     excerpt: entry._rawBodyExcerpt[0].children[0].text,
   }));
   return (
@@ -27,10 +28,12 @@ export default function Index({ data }) {
           </div>
         </section>
         <section className="portfolio">
-          <h2 className="oversized-head" id="portfolio">
+          <h2 className="oversized-head" id="portfolio-head">
             My Work
           </h2>
-          <h3>{portfolioEntries[0].title}</h3>
+          <div>
+            <Cards cardStyle="portfolio-cards" cards={portfolioEntries}/>
+          </div>
         </section>
       </main>
     </Foundation>
@@ -42,8 +45,9 @@ export const query = graphql`
     allSanityPost(filter: { topic: { title: { eq: "Portfolio" } } }) {
       nodes {
         _id
-        author {
+        authors {
           name
+          _id
         }
         _rawBodyExcerpt
         githubLink
@@ -52,11 +56,13 @@ export const query = graphql`
           attr
         }
         publishedDate
+        updatedDate
         slug {
           current
         }
         tags {
           title
+          _id
         }
         title
         deploymentLink
