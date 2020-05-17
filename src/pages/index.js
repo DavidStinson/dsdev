@@ -42,7 +42,10 @@ export default function Index({ data }) {
 
 export const query = graphql`
   {
-    allSanityPost(filter: { topic: { title: { eq: "Portfolio" } } }) {
+    allSanityPost(
+      filter: { topic: { title: { eq: "Portfolio" } } }
+      sort: { order: DESC, fields: _id }
+    ) {
       nodes {
         _id
         _rawBodyExcerpt
