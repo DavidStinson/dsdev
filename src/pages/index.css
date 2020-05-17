@@ -67,6 +67,7 @@
   grid-row: portfoio;
   display: flex;
   flex-direction: column;
+  margin-left: 1.2rem;
 }
 
 @media screen and (max-width: 1780px) {

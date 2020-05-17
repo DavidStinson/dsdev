@@ -8,6 +8,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const isProd = process.env.NODE_ENV === "production"
+
 module.exports = {
   /* Your site config here */
   plugins: [
@@ -19,6 +21,8 @@ module.exports = {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
+        watchMode: !isProd,
+        overlayDrafts: !isProd,
       },
     },
   ],
