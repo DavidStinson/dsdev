@@ -5,7 +5,8 @@ import Social from "./Social";
 
 import "./foundation.css";
 
-const Foundation = ({ children }) => (
+export default function Foundation({ children }) {
+  return (
   <div className="foundation-grid">
     <header className="header container">
       <nav className="nav container">
@@ -22,6 +23,5 @@ const Foundation = ({ children }) => (
     </header>
     <React.Fragment>{children}</React.Fragment>
   </div>
-);
-
-export default Foundation;
+  )
+};
