@@ -79,11 +79,11 @@
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
-  margin: calc(2rem + 0.5vw) calc(.6rem + .5vw) 0;
+  margin: calc(2rem + 0.5vw) calc(0.6rem + 0.5vw) 0;
   color: var(--text);
   font-size: clamp(2.4rem, calc(1rem + 3vw), 6rem);
 }
 
 .cards-container {
-  margin: calc(1.2rem + .5vw) 0rem 6rem 2.5rem
+  margin: calc(1.2rem + 0.5vw) 0rem 6rem 2.5rem;
 }
