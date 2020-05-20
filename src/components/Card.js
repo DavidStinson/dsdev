@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "gatsby-image";
 
 import "./card.css";
 
@@ -11,28 +12,41 @@ export default function Card({
   publishedDate,
   title,
   tags,
+  topic,
   updatedDate,
 }) {
   return (
-    <>
-      <div>
+    <div className="card">
+      <div className="card-heading">
         <h3 className="card-title">{title}</h3>
-        <p className="card-heroImage">{heroImage.alt}</p>
-      </div>
-      <div>
-        <div className="card-tags-container">
-          {tags.map((tag) => (
-            <p className="card-tag-title" key={tag._id}>
-              {tag.title}
-            </p>
-          ))}
+        <div className="card-hero-image-container">
+          <Img
+            fluid={heroImage.asset.fluid}
+            alt={heroImage.alt}
+            className="card-hero-image"
+          />
         </div>
+      </div>
+      <div className="card-body">
         <div className="card-authors-container">
-          {authors.map((author) => (
-            <p key={author._id} className="card-author-name">
-              {author.name}
-            </p>
-          ))}
+          <p>
+            {topic === "Portfolio" && "Built by: "}
+            {authors.map((author) => (
+              <span className="card-author-name" key={author._id}>
+                {author.name}
+              </span>
+            ))}
+          </p>
+        </div>
+        <div className="card-tags-container">
+          <p>
+            {topic === "Portfolio" && "Principal Tech: "}
+            {tags.map((tag) => (
+              <span className="card-tag-title" key={tag._id}>
+                {tag.title}
+              </span>
+            ))}
+          </p>
         </div>
         <p className="card-excerpt">{excerpt}</p>
         <p className="card-published-date">Published on {publishedDate}</p>
@@ -50,6 +64,6 @@ export default function Card({
           </a>
         )}
       </div>
-    </>
+    </div>
   );
 }

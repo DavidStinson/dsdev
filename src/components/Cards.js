@@ -19,6 +19,7 @@ export default function Cards({ cards, cardStyle }) {
               key={card.id}
               title={card.title}
               tags={card.tags}
+              topic={card.topic}
               publishedDate={card.publishedDate}
               updatedDate={card.updatedDate}
             />
