@@ -9,6 +9,7 @@ body {
     sans-serif;
 
   --bg: #efefef;
+  --bg-hover: #f5f5f5;
   --bg-accent: #303030;
   --text: #151515;
   --text-accent: #efefef;
@@ -20,6 +21,7 @@ body {
 
 body.dark {
   --bg: #34343a;
+  --bg-hover: #3f3f45;
   --bg-accent: #202020;
   --text: #efefef;
   --text-accent: #ff6700;

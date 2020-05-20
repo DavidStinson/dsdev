@@ -12,8 +12,10 @@ export default function Index({ data }) {
     ...entry,
     slug: entry.slug.current,
     id: entry._id,
+    topic: entry.topic.title,
     excerpt: entry._rawBodyExcerpt[0].children[0].text,
   }));
+  console.log(portfolioEntries);
   return (
     <Foundation>
       <main className="main-grid">
@@ -28,12 +30,23 @@ export default function Index({ data }) {
           </div>
         </section>
         <section className="portfolio">
-          <h2 className="oversized-head" id="portfolio-head">
-            My Work
-          </h2>
-          <div>
+          <h2 className="oversized-head">My Work</h2>
+          <div className="cards-container" id="portfolio-head">
             <Cards cardStyle="portfolio-cards" cards={portfolioEntries} />
           </div>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
+          <h1>TKTK</h1>
         </section>
       </main>
     </Foundation>
@@ -42,30 +55,51 @@ export default function Index({ data }) {
 
 export const query = graphql`
   {
-    allSanityPost(filter: { topic: { title: { eq: "Portfolio" } } }) {
+    allSanityPost(
+      filter: { topic: { title: { eq: "Portfolio" } } }
+      sort: { order: DESC, fields: _id }
+    ) {
       nodes {
         _id
-        authors {
-          name
-          _id
-        }
         _rawBodyExcerpt
+        authors {
+          _id
+          name
+        }
+        deploymentLink
         githubLink
         heroImage {
           alt
           attr
+          asset {
+            fluid(maxWidth: 550) {
+              ...GatsbySanityImageFluid
+            }
+            metadata {
+              lqip
+              dimensions {
+                height
+                width
+              }
+            }
+          }
         }
-        publishedDate
-        updatedDate
+        publishedDate(formatString: "dddd, MMM Do YYYY")
         slug {
           current
         }
         tags {
-          title
           _id
+          title
         }
         title
-        deploymentLink
+        topic {
+          slug {
+            current
+          }
+          title
+        }
+        updatedDate(formatString: "dddd, MMM Do YYYY")
       }
     }
   }

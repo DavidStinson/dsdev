@@ -24,7 +24,7 @@ class Social extends Component {
         className="social-container"
         data-aos="fade-down"
         data-aos-anchor="#portfolio-head"
-        data-aos-anchor-placement="center-top"
+        data-aos-anchor-placement="top-top"
       >
         <div
           className="social-name-container item item--primary"
