@@ -65,6 +65,14 @@ export const query = graphql`
         authors {
           _id
           name
+          avatar {
+            alt
+            asset {
+              fixed(width: 40) {
+                ...GatsbySanityImageFixed
+              }
+            }
+          }
         }
         deploymentLink
         githubLink
@@ -91,6 +99,15 @@ export const query = graphql`
         tags {
           _id
           title
+          tagImage {
+            alt
+            attr
+            asset {
+              fixed(width: 30) {
+                ...GatsbySanityImageFixed
+              }
+            }
+          }
         }
         title
         topic {
