@@ -37,8 +37,7 @@ export default function Index({ data }) {
         </section>
         <section className="about-me">
           <h2 className="oversized-head">About me</h2>
-          <div className="cards-container">
-          </div>
+          <div className="cards-container"></div>
         </section>
       </main>
     </Foundation>

@@ -17,7 +17,7 @@ export default function Card({
   topic,
   updatedDate,
 }) {
-  console.log(emojigo)
+  console.log(emojigo);
   return (
     <div className="card">
       <div className="card-heading">

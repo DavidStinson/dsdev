@@ -124,7 +124,8 @@
 }
 
 @media screen and (max-width: 780px) {
-  .card-heading, .card-body{
+  .card-heading,
+  .card-body {
     width: 95%;
     margin-top: 0;
     padding-right: 0;

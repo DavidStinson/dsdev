@@ -7,5 +7,5 @@
   --card-body-title-font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.6rem);
   --card-auth-tag-font-size: clamp(1.1rem, calc(1.1rem + 0.1vw), 1.3rem);
   --card-body-excerpt-font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.6rem);
-  --card-width-mobile: calc(100% - 1.3rem)
+  --card-width-mobile: calc(100% - 1.3rem);
 }
