@@ -34,19 +34,11 @@ export default function Index({ data }) {
           <div className="cards-container" id="portfolio-head">
             <Cards cardStyle="portfolio-cards" cards={portfolioEntries} />
           </div>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
-          <h1>TKTK</h1>
+        </section>
+        <section className="about-me">
+          <h2 className="oversized-head">About me</h2>
+          <div className="cards-container">
+          </div>
         </section>
       </main>
     </Foundation>
@@ -65,6 +57,7 @@ export const query = graphql`
         authors {
           _id
           name
+          socialLink
           avatar {
             alt
             asset {
@@ -75,12 +68,13 @@ export const query = graphql`
           }
         }
         deploymentLink
+        emojigo
         githubLink
         heroImage {
           alt
           attr
           asset {
-            fluid(maxWidth: 550) {
+            fluid(maxWidth: 675) {
               ...GatsbySanityImageFluid
             }
             metadata {

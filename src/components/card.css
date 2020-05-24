@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-size: 1.5rem;
 }
 
 .card:hover {
@@ -22,6 +21,12 @@
   margin: 1rem 0 0;
 }
 
+.card-published-date,
+.card-updated-date {
+  font-size: var(--card-pub-up-font-size);
+  margin: 0;
+}
+
 .card-hero-image-container {
   width: 100%;
   display: flex;
@@ -36,4 +41,92 @@
 
 .card-body {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(3.5rem + var(--card-title-font-size) + 6px);
+}
+
+.card-body-header {
+  margin: 0;
+  font-size: var(--card-body-title-font-size);
+}
+
+.card-authors-container,
+.card-tags-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-author-container,
+.card-tag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-author-image {
+  display: block;
+  border-radius: 2.5rem;
+  border: var(--element) solid 0.4rem;
+  margin: 1rem 1rem 0.5rem;
+}
+
+.card-tag-image {
+  display: block;
+  margin: 1rem 1rem 0.5rem;
+}
+
+.card-author-name,
+.card-tag-title {
+  font-size: var(--card-auth-tag-font-size);
+  margin: 0 1rem 2.5rem;
+}
+
+.card-excerpt {
+  margin: 0 0 1rem;
+  font-size: var(--card-body-excerpt-font-size);
+}
+
+.card-external-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-external-link {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  align-items: center;
+  flex-basis: content;
+  flex-shrink: 0;
+  text-decoration: none;
+  font-size: var(--card-auth-tag-font-size);
+  color: var(--element);
+}
+
+/* this is unbelievably hacky, but implements the use of different images in light and dark mode while retaining a11y and without using js. */
+.card-github-logo-small {
+  background-image: var(--github-logo);
+  background-repeat: no-repeat;
+  height: 0rem;
+  width: 0rem;
+  padding: 1.2rem 1.6rem;
+  background-size: 2.4rem 2.4rem;
+  background-position: 50% 50%;
+}
+
+.card-project-logo {
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size: 2.4rem;
+  padding-right: 0.4rem;
+}
+
+@media screen and (max-width: 780px) {
+  .card-heading, .card-body{
+    width: 95%;
+    margin-top: 0;
+    padding-right: 0;
+  }
 }
