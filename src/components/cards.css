@@ -1,6 +1,11 @@
 .portfolio-cards {
   --card-title-font-size: clamp(1.8rem, calc(1rem + 1.2vw), 3.2rem);
-  --card-heading-width: calc(50% - 1.3rem);
+  --card-pub-up-font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
   --card-heading-padding-right: 1.3rem;
+  --card-heading-width: calc(50% - var(--card-heading-padding-right));
   --card-hero-image-width: 95%;
+  --card-body-title-font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.6rem);
+  --card-auth-tag-font-size: clamp(1.1rem, calc(1.1rem + 0.1vw), 1.3rem);
+  --card-body-excerpt-font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.6rem);
+  --card-width-mobile: calc(100% - 1.3rem);
 }

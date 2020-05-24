@@ -18,7 +18,7 @@
         [col-end]
     )
     [container-right] minmax(0, 1fr) [flush-right];
-  grid-template-rows: [hero] var(--hero-row-height) [portfolio];
+  grid-template-rows: [hero] var(--hero-row-height) [hero-end portfolio] auto [portfolio-end about-me] auto [about-me-end];
 }
 
 @media screen and (max-height: 600px) {
@@ -29,7 +29,7 @@
 
 .hero {
   grid-column: flush-left / flush-right;
-  grid-row: hero;
+  grid-row: hero / hero-end;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
     url(../assets/images/austin.jpg);
   background-size: cover;
@@ -64,7 +64,7 @@
 
 .portfolio {
   grid-column: col-start 3 / span 8;
-  grid-row: portfoio;
+  grid-row: portfolio / portfolio-end;
   display: flex;
   flex-direction: column;
 }
@@ -86,4 +86,13 @@
 
 .cards-container {
   margin: calc(1.2rem + 0.5vw) 0rem 6rem 2.5rem;
+}
+
+.about-me {
+  grid-column: flush-left / flush-right;
+  grid-row: about-me / about-me-end;
+  background-color: var(--bg-accent);
+  color: var(--text-accent);
+  z-index: 3;
+  box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.4);
 }

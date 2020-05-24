@@ -13,6 +13,7 @@ export default function Cards({ cards, cardStyle }) {
             <Card
               authors={card.authors}
               deploymentLink={card.deploymentLink}
+              emojigo={card.emojigo}
               excerpt={card.excerpt}
               githubLink={card.githubLink}
               heroImage={card.heroImage}
