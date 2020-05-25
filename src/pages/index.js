@@ -36,8 +36,18 @@ export default function Index({ data }) {
           </div>
         </section>
         <section className="about-me">
-          <h2 className="oversized-head">About me</h2>
-          <div className="cards-container"></div>
+          <h2 className="oversized-head dark-bg">About me</h2>
+          <div className="about-me-panels-container">
+            <div className="about-me-one">
+              
+            </div>
+            <div className="about-me-two">
+
+            </div>
+            <div className="about-me-three">
+
+            </div>
+          </div>
         </section>
       </main>
     </Foundation>
