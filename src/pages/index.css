@@ -88,32 +88,3 @@
 .cards-container {
   margin: calc(1.2rem + 0.5vw) 0rem 6rem 2.5rem;
 }
-
-.about-me {
-  grid-column: flush-left / flush-right;
-  grid-row: about-me / about-me-end;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-accent);
-  color: var(--text-accent);
-  z-index: 3;
-  box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.4);
-}
-
-.about-me-container {
-  display: grid;
-  margin: 1rem;
-  max-height: 90rem;
-  flex-direction: row;
-  align-content: center;
-  justify-items: center;
-  grid-template-rows: 56.25% 43.75%;
-  grid-template-columns: 64% 36%;
-  grid-template-areas: 
-  "about-me-one about-me-two"
-  "about-me-three about-me-two";
-}
-
-.dark-bg {
-  color: var(--text-accent)
-}

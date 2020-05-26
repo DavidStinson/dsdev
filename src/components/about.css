@@ -1,0 +1,39 @@
+.about-me {
+  grid-column: flush-left / flush-right;
+  grid-row: about-me / about-me-end;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+  z-index: 3;
+  border-top: 0.05rem solid var(--text-accent-bg);
+}
+
+.about-me-container {
+  display: grid;
+  margin: 1rem;
+  align-content: center;
+  justify-items: center;
+}
+
+.about-items {
+  font-size: clamp(1.8rem, calc(0.6rem + 1.6vw), 4.2rem);
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 1rem 3rem;
+}
+
+.about-item {
+  width: 33.3%;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .about-item {
+    width: 50%;
+  }
+}

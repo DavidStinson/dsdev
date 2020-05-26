@@ -26,7 +26,7 @@ body {
     )
     [container-right] minmax(0, 1fr)
     [flush-right];
-  grid-template-rows: [header] var(--header-height) [main];
+  grid-template-rows: [header] var(--header-height) [main] auto [footer] 3.5rem;
 }
 
 .header {
@@ -61,6 +61,18 @@ body {
   padding: var(--nav-padding-size) 0
     calc(var(--nav-padding-size) - var(--nav-active-border));
   border-bottom: var(--nav-active-border) solid var(--element-text);
+}
+
+.footer {
+  grid-column: flush-left / flush-right;
+  grid-row: footer;
+  background-color: var(--bg-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--element-text);
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1780px) {

@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Foundation from "../components/foundation";
 import Cards from "../components/Cards";
+import About from "../components/About";
 
 import "./global.css";
 import "./index.css";
@@ -35,20 +36,7 @@ export default function Index({ data }) {
             <Cards cardStyle="portfolio-cards" cards={portfolioEntries} />
           </div>
         </section>
-        <section className="about-me">
-          <h2 className="oversized-head dark-bg">About me</h2>
-          <div className="about-me-panels-container">
-            <div className="about-me-one">
-              
-            </div>
-            <div className="about-me-two">
-
-            </div>
-            <div className="about-me-three">
-
-            </div>
-          </div>
-        </section>
+        <About />
       </main>
     </Foundation>
   );

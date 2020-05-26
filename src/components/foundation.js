@@ -6,6 +6,7 @@ import Social from "./social";
 import "./foundation.css";
 
 export default function Foundation({ children }) {
+  const year = new Date().getFullYear();
   return (
     <div className="foundation-grid">
       <header className="header container">
@@ -22,6 +23,9 @@ export default function Foundation({ children }) {
         </nav>
       </header>
       <React.Fragment>{children}</React.Fragment>
+      <footer className="footer">
+        <p className="footer-item">&copy; {year} David Stinson</p>
+      </footer>
     </div>
   );
 }
