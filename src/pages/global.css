@@ -16,18 +16,20 @@ body {
   --text-accent-bg: #595959;
   --element: #325468;
   --element-text: #efefef;
+  --white-text: #efefef;
   --github-logo: url(../assets/images/github-light.png);
 }
 
 body.dark {
   --bg: #34343a;
-  --bg-hover: #3f3f45;
+  --bg-hover: #202020;
   --bg-accent: #202020;
   --text: #efefef;
   --text-accent: #ff6700;
   --text-accent-bg: #1a1a1a;
   --element: #60a3e2;
   --element-text: #202020;
+  --white-text: #efefef;
   --github-logo: url(../assets/images/github-dark.png);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

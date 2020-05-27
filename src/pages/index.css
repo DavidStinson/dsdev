@@ -52,14 +52,14 @@
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   margin: 0;
-  color: var(--text-accent);
+  color: var(--white-text);
   font-size: clamp(3.2rem, calc(1rem + 4vw), 9.6rem);
 }
 
 .oversized-subhead {
   margin: 0;
   font-size: clamp(1.5rem, calc(0.6rem + 1.6vw), 4.2rem);
-  color: var(--text-accent);
+  color: var(--white-text);
 }
 
 .portfolio {

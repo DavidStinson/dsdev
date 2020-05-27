@@ -3,10 +3,10 @@
   grid-row: about-me / about-me-end;
   display: flex;
   flex-direction: column;
-  background-color: var(--bg);
+  background-color: var(--bg-accent);
   color: var(--text);
   z-index: 3;
-  border-top: 0.05rem solid var(--text-accent-bg);
+  
 }
 
 .about-me-container {
