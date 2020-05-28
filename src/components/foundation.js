@@ -42,7 +42,7 @@ export default function Foundation({ children }) {
       </header>
       <React.Fragment>{children}</React.Fragment>
       <footer className="footer">
-        <p className="footer-item">&copy; {year} David Stinson</p>
+        <p className="footer-item">&copy; {year} David Stinson </p>
       </footer>
     </div>
   );

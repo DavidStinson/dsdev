@@ -85,6 +85,10 @@
   align-self: flex-start;
 }
 
+.accent {
+  color: var(--white-text)
+}
+
 .cards-container {
   margin: calc(1.2rem + 0.5vw) 0rem 6rem 2.5rem;
 }
