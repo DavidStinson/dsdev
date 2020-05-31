@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
 import Social from "./social";
+import Legal from "./Legal";
 
 import "./foundation.css";
 
@@ -23,7 +24,7 @@ export default function Foundation({ children }) {
             <div className="dark-mode-container">
               <ThemeToggler>
                 {({ theme, toggleTheme }) => (
-                  <label htmlFor="dm-checkbox">
+                  <>
                     <input
                       id="dm-checkbox"
                       type="checkbox"
@@ -33,7 +34,9 @@ export default function Foundation({ children }) {
                       }
                       checked={theme === "dark"}
                     />
-                  </label>
+                    <label htmlFor="dm-checkbox" id="dm-checkbox-label">
+                    </label>
+                  </>
                 )}
               </ThemeToggler>
             </div>
@@ -42,7 +45,9 @@ export default function Foundation({ children }) {
       </header>
       <React.Fragment>{children}</React.Fragment>
       <footer className="footer">
-        <p className="footer-item">&copy; {year} David Stinson </p>
+        <p className="footer-item">
+          &copy; {year} David Stinson - <Legal />
+        </p>
       </footer>
     </div>
   );

@@ -18,6 +18,7 @@ body {
   --element-text: #efefef;
   --white-text: #efefef;
   --github-logo: url(../assets/images/github-light.png);
+  --light-dark-toggle: url(../assets/images/moon-solid.svg);
 }
 
 body.dark {
@@ -31,6 +32,7 @@ body.dark {
   --element-text: #202020;
   --white-text: #efefef;
   --github-logo: url(../assets/images/github-dark.png);
+  --light-dark-toggle: url(../assets/images/sun-solid.svg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,6 +50,19 @@ body.dark {
     )
     [container-right] minmax(0, 1fr)
     [flush-right];
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }
 
 @media screen and (max-width: 1780px) {

@@ -60,25 +60,45 @@ body {
   margin: 0 calc(0.32rem + 0.42vw);
 }
 
-.nav .dark-mode-container {
+.dark-mode-container {
   margin-left: auto;
   margin-right: 2rem;
   height: var(--nav-height);
+  width: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.dark-mode-container input {
-  height: 40px;
-  width: 40px;
-  left: 0;
-  opacity: 1;
+#dm-checkbox {
+  height: .01rem;
+  width: .01rem;
   position: absolute;
-  top: 0;
-
+  top: calc((var(--nav-height) - 2.5rem) / 2);
+  opacity: 1;
+  -moz-appearance:initial;
+  margin: 0;
+  background-color: var(--bg-accent);
+  overflow: hidden;
 }
+
+#dm-checkbox-label {
+  content: "";
+}
+
+#dm-checkbox-label::before {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  top: calc((var(--nav-height) - 2.5rem) / 2);
+  left: 0;
+  position: absolute;
+  background: var(--light-dark-toggle);
+  opacity: 1;
+}
+
+
 
 .nav .active {
   padding: var(--nav-padding-size) 0
