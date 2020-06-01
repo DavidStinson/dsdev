@@ -9,9 +9,7 @@
   box-shadow: 0 -1rem 2.5rem rgba(0, 0, 0, 0.2);
 }
 
-.about-me .oversized-header
-
-.about-me-container {
+.about-me .oversized-header .about-me-container {
   display: grid;
   margin: 1rem;
   align-content: center;

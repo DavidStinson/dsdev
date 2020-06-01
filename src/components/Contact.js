@@ -50,16 +50,20 @@ export default function Contact() {
           ></img>
         </a>
         <div id="email-contact" className="contact-item-end">
-          <img
-            src={at}
-            alt="email at Logo"
-            className="social-logo-large"
-          ></img>
+          <img src={at} alt="email at Logo" className="social-logo-large"></img>
         </div>
-        <span id="contact-email" className="contact-address">mail</span>
-        <span id="contact-at" className="contact-address">@</span>
-        <span id="contact-name" className="contact-address">davidstinson</span>
-        <span id="contact-dev" className="contact-address">.dev</span>
+        <span id="contact-email" className="contact-address">
+          mail
+        </span>
+        <span id="contact-at" className="contact-address">
+          @
+        </span>
+        <span id="contact-name" className="contact-address">
+          davidstinson
+        </span>
+        <span id="contact-dev" className="contact-address">
+          .dev
+        </span>
       </div>
     </section>
   );

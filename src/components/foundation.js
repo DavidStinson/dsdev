@@ -34,8 +34,7 @@ export default function Foundation({ children }) {
                       }
                       checked={theme === "dark"}
                     />
-                    <label htmlFor="dm-checkbox" id="dm-checkbox-label">
-                    </label>
+                    <label htmlFor="dm-checkbox" id="dm-checkbox-label"></label>
                   </>
                 )}
               </ThemeToggler>

@@ -35,7 +35,7 @@
 .close-legal-button {
   font-size: 1.8rem;
   font-weight: bold;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   width: clamp(80px, 10%, 140px);
   padding: 1rem;
   border-radius: 1.5rem;
@@ -54,7 +54,7 @@
 }
 
 .legal-subhead {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   font-size: clamp(1.6rem, calc(0.6rem + 1.6vw), 1.8rem);
   color: var(--text);
 }
