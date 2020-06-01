@@ -34,7 +34,6 @@ class Social extends Component {
         </div>
         <div className="social-site-container">
           <a
-            className="social-link"
             href="https://linkedin.com/in/david-stinson"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,7 +45,6 @@ class Social extends Component {
             ></img>
           </a>
           <a
-            className="social-link"
             href="https://github.com/DavidStinson"
             target="_blank"
             rel="noopener noreferrer"
@@ -54,7 +52,6 @@ class Social extends Component {
             <img src={github} alt="GitHub Logo" id="github-logo-small"></img>
           </a>
           <a
-            className="social-link"
             href="https://twitter.com/davidstinson"
             target="_blank"
             rel="noopener noreferrer"

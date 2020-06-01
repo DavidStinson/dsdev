@@ -14,6 +14,7 @@ body {
   --text: #151515;
   --text-accent: #efefef;
   --text-accent-bg: #595959;
+  --text-contact: #292929;
   --element: #325468;
   --element-text: #efefef;
   --white-text: #efefef;
@@ -28,6 +29,7 @@ body.dark {
   --text: #efefef;
   --text-accent: #ff6700;
   --text-accent-bg: #1a1a1a;
+  --text-contact: #191919;
   --element: #60a3e2;
   --element-text: #202020;
   --white-text: #efefef;

@@ -72,12 +72,12 @@ body {
 }
 
 #dm-checkbox {
-  height: .01rem;
-  width: .01rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: absolute;
   top: calc((var(--nav-height) - 2.5rem) / 2);
-  opacity: 1;
-  -moz-appearance:initial;
+  opacity: 0;
+  -moz-appearance: initial;
   margin: 0;
   background-color: var(--bg-accent);
   overflow: hidden;
@@ -97,8 +97,6 @@ body {
   background: var(--light-dark-toggle);
   opacity: 1;
 }
-
-
 
 .nav .active {
   padding: var(--nav-padding-size) 0
@@ -129,6 +127,7 @@ body {
     display: none;
   }
   .nav .main-nav {
-    grid-column: col-start 1 / span 10;
+    grid-column: col-start 1 / span 12;
+    padding-left: 1rem;
   }
 }
