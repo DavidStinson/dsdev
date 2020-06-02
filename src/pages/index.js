@@ -17,7 +17,6 @@ export default function Index({ data }) {
     topic: entry.topic.title,
     excerpt: entry._rawBodyExcerpt[0].children[0].text,
   }));
-  console.log(portfolioEntries);
   return (
     <Foundation>
       <main className="main-grid">
