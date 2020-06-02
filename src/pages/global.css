@@ -14,21 +14,27 @@ body {
   --text: #151515;
   --text-accent: #efefef;
   --text-accent-bg: #595959;
+  --text-contact: #292929;
   --element: #325468;
   --element-text: #efefef;
+  --white-text: #efefef;
   --github-logo: url(../assets/images/github-light.png);
+  --light-dark-toggle: url(../assets/images/moon-solid.svg);
 }
 
 body.dark {
   --bg: #34343a;
-  --bg-hover: #3f3f45;
+  --bg-hover: #202020;
   --bg-accent: #202020;
   --text: #efefef;
   --text-accent: #ff6700;
   --text-accent-bg: #1a1a1a;
+  --text-contact: #191919;
   --element: #60a3e2;
   --element-text: #202020;
+  --white-text: #efefef;
   --github-logo: url(../assets/images/github-dark.png);
+  --light-dark-toggle: url(../assets/images/sun-solid.svg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,6 +52,19 @@ body.dark {
     )
     [container-right] minmax(0, 1fr)
     [flush-right];
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1780px) {

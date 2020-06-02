@@ -26,7 +26,7 @@ body {
     )
     [container-right] minmax(0, 1fr)
     [flush-right];
-  grid-template-rows: [header] var(--header-height) [main];
+  grid-template-rows: [header] var(--header-height) [main] auto [footer] 3.5rem;
 }
 
 .header {
@@ -45,22 +45,75 @@ body {
 }
 
 .nav .main-nav {
-  grid-column: col-start 3 / span 9;
+  grid-column: col-start 3 / span 8;
   grid-row: header;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
   box-sizing: border-box;
 }
 
 .nav .link {
-  color: var(--element-text);
+  color: var(--text-accent);
   text-decoration: none;
   padding: var(--nav-padding-size) 0;
   margin: 0 calc(0.32rem + 0.42vw);
 }
 
+.dark-mode-container {
+  margin-left: auto;
+  margin-right: 2rem;
+  height: var(--nav-height);
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#dm-checkbox {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  top: calc((var(--nav-height) - 2.5rem) / 2);
+  opacity: 0;
+  -moz-appearance: initial;
+  margin: 0;
+  background-color: var(--bg-accent);
+  overflow: hidden;
+}
+
+#dm-checkbox-label {
+  content: "";
+}
+
+#dm-checkbox-label::before {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  top: calc((var(--nav-height) - 2.5rem) / 2);
+  left: 0;
+  position: absolute;
+  background: var(--light-dark-toggle);
+  opacity: 1;
+}
+
 .nav .active {
   padding: var(--nav-padding-size) 0
     calc(var(--nav-padding-size) - var(--nav-active-border));
-  border-bottom: var(--nav-active-border) solid var(--element-text);
+  border-bottom: var(--nav-active-border) solid var(--element);
+}
+
+.footer {
+  grid-column: flush-left / flush-right;
+  grid-row: footer;
+  background-color: var(--bg-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-text);
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1780px) {
@@ -74,6 +127,7 @@ body {
     display: none;
   }
   .nav .main-nav {
-    grid-column: col-start 1 / span 10;
+    grid-column: col-start 1 / span 12;
+    padding-left: 1rem;
   }
 }

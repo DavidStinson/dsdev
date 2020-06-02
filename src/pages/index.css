@@ -18,7 +18,7 @@
         [col-end]
     )
     [container-right] minmax(0, 1fr) [flush-right];
-  grid-template-rows: [hero] var(--hero-row-height) [hero-end portfolio] auto [portfolio-end about-me] auto [about-me-end];
+  grid-template-rows: [hero] var(--hero-row-height) [hero-end portfolio] auto [portfolio-end about-me] auto [about-me-end contact-me] auto [contact-me-end];
 }
 
 @media screen and (max-height: 600px) {
@@ -52,14 +52,14 @@
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   margin: 0;
-  color: var(--text-accent);
+  color: var(--white-text);
   font-size: clamp(3.2rem, calc(1rem + 4vw), 9.6rem);
 }
 
 .oversized-subhead {
   margin: 0;
   font-size: clamp(1.5rem, calc(0.6rem + 1.6vw), 4.2rem);
-  color: var(--text-accent);
+  color: var(--white-text);
 }
 
 .portfolio {
@@ -82,17 +82,13 @@
   margin: calc(2rem + 0.5vw) calc(0.6rem + 0.5vw) 0;
   color: var(--text);
   font-size: clamp(2.4rem, calc(1rem + 3vw), 6rem);
+  align-self: flex-start;
+}
+
+.accent {
+  color: var(--white-text);
 }
 
 .cards-container {
   margin: calc(1.2rem + 0.5vw) 0rem 6rem 2.5rem;
-}
-
-.about-me {
-  grid-column: flush-left / flush-right;
-  grid-row: about-me / about-me-end;
-  background-color: var(--bg-accent);
-  color: var(--text-accent);
-  z-index: 3;
-  box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.4);
 }
