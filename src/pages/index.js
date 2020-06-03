@@ -47,7 +47,7 @@ export const query = graphql`
   {
     allSanityPost(
       filter: { topic: { title: { eq: "Portfolio" } } }
-      sort: { order: DESC, fields: _id }
+      sort: { order: DESC, fields: publishedDate }
     ) {
       nodes {
         _id
