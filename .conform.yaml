@@ -38,7 +38,7 @@ policies:
           - "format"
           - "page"
           - "plugin"
-          - git a
+          - "prod"
           - "sanity"
           - "style"
         descriptionLength: 72
