@@ -38,6 +38,7 @@ policies:
           - "format"
           - "page"
           - "plugin"
+          - "prod"
           - "sanity"
           - "style"
         descriptionLength: 72

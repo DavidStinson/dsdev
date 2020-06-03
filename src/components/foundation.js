@@ -29,12 +29,16 @@ export default function Foundation({ children }) {
                       id="dm-checkbox"
                       type="checkbox"
                       aria-label="dark mode checkbox"
-                      onClick={(e) =>
+                      onChange={(e) =>
                         toggleTheme(e.target.checked ? "dark" : "light")
                       }
                       checked={theme === "dark"}
                     />
-                    <span htmlFor="dm-checkbox" id="dm-checkbox-label"></span>
+                    <label
+                      htmlFor="dm-checkbox"
+                      id="dm-checkbox-label"
+                      aria-label="dark mode checkbox"
+                    ></label>
                   </>
                 )}
               </ThemeToggler>
