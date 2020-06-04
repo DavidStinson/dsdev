@@ -9,9 +9,9 @@ export default () => (
   <Foundation>
     <section className="four-oh-four-container">
       <h1 className="overwhelmingly-large-accent mod">
-        Blog page coming soon!
+        Looks like this page doesn't exist!
       </h1>
-      <h3 className="oversized-subhead mod">Work in progress.</h3>
+      <h3 className="oversized-subhead mod">That's unfortunate.</h3>
     </section>
   </Foundation>
 );
