@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Merriweather";
   src: url("../assets/fonts/Merriweather-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 .main-grid {
