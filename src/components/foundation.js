@@ -18,9 +18,9 @@ export default function Foundation({ children }) {
             <Link to="/" className="link" activeClassName="active">
               Portfolio & Contact
             </Link>
-            <Link to="/blog/" className="link" activeClassName="active">
+            {/* <Link to="/blog/" className="link" activeClassName="active">
               Blog
-            </Link>
+            </Link> */}
             <div className="dark-mode-container">
               <ThemeToggler>
                 {({ theme, toggleTheme }) => (

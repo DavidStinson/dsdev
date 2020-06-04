@@ -1,0 +1,18 @@
+.four-oh-four-container {
+  grid-column: flush-left / flush-right;
+  grid-row: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(
+    20rem,
+    calc(100vh - calc(var(--nav-height) + 3.5rem)),
+    calc(100vh - calc(var(--nav-height) + 3.5rem))
+  );
+  flex-direction: column;
+}
+
+.mod {
+  color: var(--text) !important;
+  margin: 1.8rem !important;
+}
