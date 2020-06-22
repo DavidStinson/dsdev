@@ -11,7 +11,14 @@ require("dotenv").config({
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "David Stinson",
+    defaultTitle: "David Stinson - Software Engineer",
+    description: "David Stinson is a software engineer creating in Austin, TX.",
+    url: "https://davidstinson.dev",
+    image: "/images/social.jpeg",
+    twitterUsername: "@DavidStinson"
+  },
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
