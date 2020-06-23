@@ -1,5 +1,7 @@
-name: push-integrate
-on: [push]
+name: Push Integraiton on Dev
+on:
+  push:
+    branches: [dev]
 jobs:
   conform:
     runs-on: ubuntu-latest
