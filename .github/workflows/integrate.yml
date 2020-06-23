@@ -1,4 +1,4 @@
-name: Push Integraiton on Dev
+name: Push Integraiton on dev
 on:
   push:
     branches: [dev]

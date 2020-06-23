@@ -1,4 +1,4 @@
-name: Pull Request On Main
+name: Pull Request On main
 on:
   pull_request:
     branches: [main]
