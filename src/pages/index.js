@@ -5,6 +5,7 @@ import Foundation from "../components/foundation";
 import Cards from "../components/Cards";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import SEO from "../components/seo"
 
 import "./global.css";
 import "./index.css";
@@ -19,6 +20,7 @@ export default function Index({ data }) {
   }));
   return (
     <Foundation>
+      <SEO />
       <main className="main-grid">
         <section className="hero">
           <div className="hero-text">

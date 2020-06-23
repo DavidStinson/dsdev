@@ -17,12 +17,14 @@ module.exports = {
     description: "David Stinson is a software engineer creating in Austin, TX.",
     url: "https://davidstinson.dev",
     image: "/images/social.jpeg",
-    twitterUsername: "@DavidStinson"
+    imageAlt:
+      "Text in image reads: Hey, I'm David Stinson I build quality software and websites in Austin, TX",
+    twitterUsername: "@DavidStinson",
   },
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-dark-mode",
     {
       resolve: "gatsby-source-sanity",
       options: {
