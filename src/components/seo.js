@@ -42,6 +42,7 @@ const SEO = ({ title, description, image, article }) => {
       htmlAttributes={{ lang: "en" }}
       title={seo.title}
       titleTemplate={titleTemplate}
+      defer={false}
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />

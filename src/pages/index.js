@@ -10,7 +10,7 @@ import SEO from "../components/seo";
 import "./global.css";
 import "./index.css";
 
-export default function Index({ data }) {
+const Index = ({ data }) => {
   let portfolioEntries = data.allSanityPost.nodes.map((entry) => ({
     ...entry,
     slug: entry.slug.current,
@@ -44,6 +44,8 @@ export default function Index({ data }) {
     </Foundation>
   );
 }
+
+export default Index
 
 export const query = graphql`
   {
