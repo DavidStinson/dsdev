@@ -26,6 +26,7 @@ policies:
           - "test"
           - "type"
         scopes:
+          - "a11y"
           - "api"
           - "build"
           - "ci"

@@ -24,7 +24,11 @@ export default function Foundation({ children }) {
             <div className="dark-mode-container">
               <ThemeToggler>
                 {({ theme, toggleTheme }) => (
-                  <>
+                  <label
+                    htmlFor="dm-checkbox"
+                    id="dm-checkbox-label"
+                    aria-label="dark mode checkbox"
+                  >
                     <input
                       id="dm-checkbox"
                       type="checkbox"
@@ -34,12 +38,7 @@ export default function Foundation({ children }) {
                       }
                       checked={theme === "dark"}
                     />
-                    <label
-                      htmlFor="dm-checkbox"
-                      id="dm-checkbox-label"
-                      aria-label="dark mode checkbox"
-                    ></label>
-                  </>
+                  </label>
                 )}
               </ThemeToggler>
             </div>
