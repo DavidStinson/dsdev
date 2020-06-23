@@ -5,7 +5,7 @@ import Foundation from "../components/foundation";
 import Cards from "../components/Cards";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
 import "./global.css";
 import "./index.css";
