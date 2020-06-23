@@ -37,8 +37,6 @@ const SEO = ({ title, description, image, article }) => {
     url: `${siteUrl}${pathname}`,
   };
 
-  console.log(seo)
-
   return (
     <Helmet
       htmlAttributes={{ lang: "en" }}
