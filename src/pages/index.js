@@ -43,9 +43,9 @@ const Index = ({ data }) => {
       </main>
     </Foundation>
   );
-}
+};
 
-export default Index
+export default Index;
 
 export const query = graphql`
   {
