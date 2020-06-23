@@ -37,6 +37,8 @@ const SEO = ({ title, description, image, article }) => {
     url: `${siteUrl}${pathname}`,
   };
 
+  console.log(seo)
+
   return (
     <Helmet
       htmlAttributes={{ lang: "en" }}
@@ -49,6 +51,7 @@ const SEO = ({ title, description, image, article }) => {
       {/* Open Graph SEO */}
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
+      {(!article ? true : null) && <meta property="og:type" content="website" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
