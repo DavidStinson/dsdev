@@ -10,7 +10,7 @@ on:
 jobs:
   CodeQL-Build:
     runs-on: ubuntu-latest
-
+    if: github.actor != 'dependabot[bot]' || github.actor != 'dependabot-preview[bot]'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
